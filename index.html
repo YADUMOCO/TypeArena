@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeArena</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>TypeArena</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-level="beginner">🟢 Beginner</button>
+      <button class="tab" data-level="intermediate">🟡 Intermediate</button>
+      <button class="tab" data-level="advanced">🔴 Advanced</button>
+    </div>
+
+    <div class="content">
+      <p id="sentence">Select a level and click 'Start'.</p>
+      <textarea id="input" placeholder="Start typing here..." disabled></textarea>
+    </div>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <div class="stats">
+      <p>⏱ Time: <span id="time">0</span>s</p>
+      <p>💨 Speed: <span id="wpm">0</span> WPM</p>
+      <p>🎯 Accuracy: <span id="accuracy">0</span>%</p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
