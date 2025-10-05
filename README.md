@@ -48,12 +48,17 @@ pip install flask
 Run the application:
 python app.py
 
-Folder Structure
-typing_speed_tester/app.py                 # Flask backend
-typing_speed_tester/ templates/ index.html          # HTML UI
-typing_speed_tester/static/style.css           # Styling
-typing_speed_tester/static/script.js           # JavaScript logic
-typing_speed_tester/static/bg.jpg              # Background image
+Folder Structure:
+
+  typing_speed_tester/app.py                 # Flask backend
+
+  typing_speed_tester/ templates/ index.html          # HTML UI
+  
+  typing_speed_tester/static/style.css           # Styling
+  
+  typing_speed_tester/static/script.js           # JavaScript logic
+  
+  typing_speed_tester/static/bg.jpg              # Background image
 
 Usage:
 Select a difficulty level by clicking on the Beginner / Intermediate / Advanced tab.
